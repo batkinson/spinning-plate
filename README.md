@@ -19,6 +19,7 @@ Rather than bake this into the application, it is configured by looking for a
 properties file in the user's home directory. The file is:
 
 > Under Windows: c:\Users\<username>\.spinning-plate.properties
+
 > Under Linux/Unix: /home/<username>/.spinning-plate.properties
 
 The only setting required is storage.dir, which should point to the desired
@@ -42,6 +43,8 @@ Using the application is as simple as getting/putting/deleting files using the
 appropriate HTTP methods. Using curl, an example:
 
 > curl -X PUT --data @afile.xml http://localhost:8080/input.xml
+
 > curl -X PUT --data @astyle.css http://localhost:8080/style.css
+
 > curl http://localhost:8080/input.pdf # Generates the pdf for input.xml
 
