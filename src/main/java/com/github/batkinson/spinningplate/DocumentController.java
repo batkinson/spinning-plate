@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.HandlerMapping;
 
 /**
- * Spring MVC controller that handles
+ * Spring MVC controller that handles storing, retrieving and generating content.
  */
 @Controller
 public class DocumentController {

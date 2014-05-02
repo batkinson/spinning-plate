@@ -15,6 +15,9 @@ import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
+/**
+ * Implementation of core document services.
+ */
 public class DocumentServiceImpl implements DocumentService {
 
 	private File storageDir;

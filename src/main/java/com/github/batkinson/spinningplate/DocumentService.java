@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * Service interface for document operations.
+ */
 public interface DocumentService {
 
 	void store(InputStream input, String path) throws IOException;
@@ -12,6 +15,6 @@ public interface DocumentService {
 
 	InputStream fetch(String path) throws FileNotFoundException;
 
-	byte [] generate(String path) throws Exception;
+	byte[] generate(String path) throws Exception;
 
 }
