@@ -33,7 +33,7 @@ Running the application is as simple as running the main application class. The
 built jar makes this as simple as double-clicking it under windows, or under
 Linux/Unix:
 
-> java -jar <spinning-plate-jar>
+> java -jar spinning-plate-VERSION.jar
 
 This will start the server on TCP port 8080.
 
