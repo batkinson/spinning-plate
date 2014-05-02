@@ -1,0 +1,14 @@
+breakfast_menu { 
+	display: table; 
+}
+
+food {
+	display: table-row;
+}
+
+name, price, description, calories {
+	display: table-cell;
+	padding: 2px 5px;
+}
+
+
