@@ -16,7 +16,7 @@ import org.springframework.core.env.Environment;
  * Configures application services based on environmental configuration.
  */
 @Configuration
-@PropertySource("file:${user.home}/spinning-plate.properties")
+@PropertySource("file:${user.home}/.spinning-plate.properties")
 public class ApplicationConfiguration {
 
 	@Autowired
