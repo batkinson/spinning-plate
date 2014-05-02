@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.HandlerMapping;
 
 /**
- * Spring MVC controller that handles storing, retrieving and generating content.
+ * Spring MVC controller that handles storing, retrieving and generating
+ * content.
  */
 @Controller
 public class DocumentController {
@@ -61,4 +62,10 @@ public class DocumentController {
 				.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
 	}
 
+	@RequestMapping(method = RequestMethod.DELETE)
+	@ResponseStatus(value = HttpStatus.OK)
+	public void removeContent(HttpServletRequest request) {
+		String path = getPathFromRequest(request);
+		documentService.delete(path);
+	}
 }
